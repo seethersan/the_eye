@@ -94,8 +94,8 @@ class EventViewSet(viewsets.ViewSet):
             logger.error("Error while processing Event: {}".format(e))
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         else:
-            logger.info("Event {} was queued successfully".format(request.data.get('name')))
             task = create_event.delay(request.data)
+            logger.info("Event {} was queued successfully".format(request.data.get('name')))
             return Response({"task_id": task.id}, status=status.HTTP_202_ACCEPTED)
 
     def retrieve(self, request, pk=None):
