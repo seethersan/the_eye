@@ -7,6 +7,9 @@ db.sqlite3
 media
 static
 
+# Docker volumes #
+.db_admin/
+
 # Backup files # 
 *.bak 
 
