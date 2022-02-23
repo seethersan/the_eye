@@ -8,7 +8,7 @@ media
 static
 
 # Docker volumes #
-.db_admin/
+.db_admin
 
 # Backup files # 
 *.bak 
