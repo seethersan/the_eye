@@ -35,5 +35,6 @@ The order of execution of the methods is:
 2. create_application
 3. create_session
 4. create_event
+5. get_event_sessions
 
 When an application is created it is assigned to the current user and only this user have permission to send events for this application.
