@@ -11,6 +11,15 @@ urlpatterns = [
         'put': 'update',
         'delete': 'destroy'
     })),
+    path('events', EventViewSet.as_view({
+        'get': 'list',
+        'post': 'create'
+    })),
+    path('events/<int:pk>', EventViewSet.as_view({
+        'get': 'retrieve',
+        'put': 'update',
+        'delete': 'destroy'
+    })),
     path('sessions', SessionViewSet.as_view({
         'get': 'list',
         'post': 'create'
