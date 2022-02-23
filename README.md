@@ -13,40 +13,6 @@ The API can be executed with docker-compose. It has the following services:
 
 It's built with Python 3.9 and Django 4.0
 
-Tree structure
-========
-.
-├── README.md
-├── api
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── celery.py
-│   ├── management
-│   │   └── commands
-│   │       ├── create_superuser.py
-│   │       └── wait_for_db.py
-│   ├── migrations
-│   │   ├── 0001_initial.py
-│   │   ├── __init__.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── tasks
-│   │   └── db_task.py
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
-├── manage.py
-├── requirements.txt
-├── static
-└── the_eye
-    ├── __init__.py
-    ├── asgi.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
-
-
 Docker services for development
 =========
 The app services runs in 8000 port
